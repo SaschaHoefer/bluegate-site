@@ -18,9 +18,11 @@
   <!-- The mark, inlined so the tab icon needs no extra request or file. -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2545'/%3E%3Cpath d='M11 56 V27 A21 21 0 0 1 53 27 V56' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='20' y='41' width='6' height='11' rx='1.5' fill='%2335c0ff'/%3E%3Crect x='29' y='33' width='6' height='19' rx='1.5' fill='%2335c0ff'/%3E%3Crect x='38' y='25' width='6' height='27' rx='1.5' fill='%2335c0ff'/%3E%3C/svg%3E">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@600;700&display=swap">
+  <!-- Fonts are self-hosted rather than pulled from Google. Embedding them from fonts.googleapis.com
+       sends every visitor's IP address to Google before they have agreed to anything, which is the
+       single most-litigated detail on EU-facing sites. Self-hosting means this page contacts nobody
+       but its own origin, which is what privacy.html is able to say. -->
+  <link rel="stylesheet" href="fonts.css">
 
   <style>
     body { margin: 0; }
@@ -172,6 +174,9 @@
     <div class="inter foot-right" style="text-align: right; font-size: 13px; line-height: 1.9;">
       <a href="mailto:info@bluegateanalytics.com" style="color: #dbe6f5;">info@bluegateanalytics.com</a><br>
       <a href="https://www.bluegateanalytics.com" style="color: #dbe6f5;">www.bluegateanalytics.com</a><br>
+      <a href="imprint.html" style="color: #dbe6f5;">Imprint</a>
+      <span style="color: #6f88ab;"> · </span>
+      <a href="privacy.html" style="color: #dbe6f5;">Privacy</a><br>
       <span style="color: #6f88ab;">© 2026 BlueGate Analytics LLC</span>
     </div>
   </footer>
