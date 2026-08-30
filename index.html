@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlueGate Analytics — Enterprise software, differently</title>
+  <meta name="description" content="BlueGate Analytics builds AxiumOne, a multi-tenant, metadata-driven ERP platform your team configures. Business objects, workflows and analytics, without writing code.">
+  <link rel="canonical" href="https://www.bluegateanalytics.com/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BlueGate Analytics — Enterprise software, differently">
+  <meta property="og:description" content="Software that fits your business — not the other way around.">
+  <meta property="og:url" content="https://www.bluegateanalytics.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b2545">
+
+  <!-- The mark, inlined so the tab icon needs no extra request or file. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2545'/%3E%3Cpath d='M11 56 V27 A21 21 0 0 1 53 27 V56' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='20' y='41' width='6' height='11' rx='1.5' fill='%2335c0ff'/%3E%3Crect x='29' y='33' width='6' height='19' rx='1.5' fill='%2335c0ff'/%3E%3Crect x='38' y='25' width='6' height='27' rx='1.5' fill='%2335c0ff'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Red+Hat+Display:wght@600;700&display=swap">
+
+  <style>
+    body { margin: 0; }
+    a { text-decoration: none; color: inherit; }
+    .rhd { font-family: 'Red Hat Display', system-ui, 'Segoe UI', sans-serif; }
+    .inter { font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Keyboard focus must stay visible — the design has none of its own. */
+    a:focus-visible { outline: 2px solid #35c0ff; outline-offset: 3px; border-radius: 4px; }
+
+    /* --- Responsive layer -------------------------------------------------------------------
+       The design came off a fixed 1280px artboard, where every padding and size is absolute.
+       Rather than rewrite those inline styles (and risk drifting from the approved design), the
+       desktop rendering is left exactly as drawn and only the handful of things that BREAK on a
+       narrow screen are overridden here. Horizontal padding scales with the viewport so the
+       72px gutters do not eat a phone screen, the two multi-column bands collapse, and the hero
+       headline shrinks with the page instead of overflowing it. */
+    .wrap { width: 100%; max-width: 1280px; margin: 0 auto; }
+    .pad  { padding-left: clamp(20px, 5.6vw, 72px) !important; padding-right: clamp(20px, 5.6vw, 72px) !important; }
+    .hero-h1 { font-size: clamp(32px, 5.2vw, 58px) !important; }
+
+    @media (max-width: 900px) {
+      .grid3 { grid-template-columns: 1fr !important; }
+      .band  { grid-template-columns: 1fr !important; gap: 32px !important; }
+      .foot  { flex-direction: column !important; align-items: flex-start !important; gap: 26px; }
+      .foot-right { text-align: left !important; }
+      .hero-copy { padding-top: 48px !important; padding-bottom: 64px !important; }
+      .ghost-mark { display: none; }          /* the oversized watermark crowds a small screen */
+    }
+    @media (max-width: 640px) {
+      .nav-links a:not(.nav-cta) { display: none; }   /* keep only the call to action */
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .hero-actions a { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap" style="background: #ffffff;">
+
+  <!-- ===== HERO (deep navy) ===== -->
+  <div style="background: radial-gradient(1100px 520px at 78% -8%, #16407a 0%, #0b2545 55%, #0a1f3d 100%); color: #eaf1fb; position: relative; overflow: hidden;">
+
+    <!-- oversized ghost mark -->
+    <svg class="ghost-mark" width="620" height="620" viewBox="0 0 64 64" aria-hidden="true" style="position: absolute; right: -120px; top: -40px; opacity: 0.07;">
+      <path d="M11 56 V27 A21 21 0 0 1 53 27 V56" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="20" y="41" width="6" height="11" rx="1.5" fill="#ffffff"/>
+      <rect x="29" y="33" width="6" height="19" rx="1.5" fill="#ffffff"/>
+      <rect x="38" y="25" width="6" height="27" rx="1.5" fill="#ffffff"/>
+    </svg>
+
+    <!-- nav -->
+    <nav class="pad" style="display: flex; align-items: center; justify-content: space-between; padding: 30px 72px; position: relative; gap: 20px; flex-wrap: wrap;">
+      <a href="/" style="display: flex; align-items: center; gap: 12px;" aria-label="BlueGate Analytics home">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="navG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#29b6f6"/><stop offset="1" stop-color="#cfe8ff"/></linearGradient></defs>
+          <path d="M11 56 V27 A21 21 0 0 1 53 27 V56" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20" y="41" width="6" height="11" rx="1.5" fill="url(#navG)"/>
+          <rect x="29" y="33" width="6" height="19" rx="1.5" fill="url(#navG)"/>
+          <rect x="38" y="25" width="6" height="27" rx="1.5" fill="url(#navG)"/>
+        </svg>
+        <div class="rhd" style="font-weight: 700; font-size: 21px; letter-spacing: -0.015em;"><span style="color: #ffffff;">Blue</span><span style="color: #35c0ff;">Gate</span></div>
+      </a>
+      <div class="inter nav-links" style="display: flex; align-items: center; gap: 34px; font-size: 14.5px; color: #b9cbe4; font-weight: 500;">
+        <a href="#platform">Platform</a>
+        <a href="#approach">Approach</a>
+        <a href="mailto:info@bluegateanalytics.com">Contact</a>
+        <a class="nav-cta" href="mailto:info@bluegateanalytics.com?subject=AxiumOne%20demo%20request" style="color: #0b2545; background: #35c0ff; padding: 9px 18px; border-radius: 8px; font-weight: 600;">Book a demo</a>
+      </div>
+    </nav>
+
+    <!-- hero copy -->
+    <header class="pad hero-copy" style="padding: 74px 72px 96px; position: relative; max-width: 830px;">
+      <div class="inter" style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em; color: #56b7ef; text-transform: uppercase; margin-bottom: 22px;">Enterprise software, differently</div>
+      <h1 class="rhd hero-h1" style="font-weight: 700; font-size: 58px; line-height: 1.05; letter-spacing: -0.02em; margin: 0; color: #f4f8ff; text-wrap: balance;">Software that fits your business — not the other way around.</h1>
+      <p class="inter" style="font-size: 18.5px; line-height: 1.62; color: #c3d3ea; margin: 26px 0 0; max-width: 640px;">BlueGate Analytics builds <b style="color: #eaf1fb; font-weight: 600;">AxiumOne</b> — a multi-tenant, metadata-driven ERP platform your team configures. Business objects, workflows, and analytics, without writing code.</p>
+      <div class="hero-actions" style="display: flex; gap: 14px; margin-top: 38px;">
+        <a href="https://axiumone.com" class="inter" style="background: #35c0ff; color: #0a1f3d; font-weight: 600; font-size: 15.5px; padding: 15px 28px; border-radius: 10px;">Explore AxiumOne</a>
+        <a href="mailto:info@bluegateanalytics.com?subject=AxiumOne%20demo%20request" class="inter" style="border: 1px solid #3a5b8c; color: #dbe6f5; font-weight: 600; font-size: 15.5px; padding: 15px 28px; border-radius: 10px;">Book a demo</a>
+      </div>
+    </header>
+  </div>
+
+  <!-- ===== VALUE (light) ===== -->
+  <section id="approach" class="pad" style="padding: 84px 72px 76px; background: #ffffff;">
+    <h2 class="rhd" style="font-weight: 700; font-size: 30px; letter-spacing: -0.015em; color: #101828; margin: 0 0 8px;">Built to adapt</h2>
+    <p class="inter" style="font-size: 16px; color: #64748b; margin: 0 0 42px; max-width: 560px; line-height: 1.6;">Most business software makes you fit its mould. Ours flexes to your operation.</p>
+    <div class="grid3" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px;">
+
+      <div style="border: 1px solid #e4e9f2; border-radius: 16px; padding: 30px 28px;">
+        <div style="width: 44px; height: 44px; border-radius: 11px; background: #eef4ff; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        </div>
+        <h3 class="rhd" style="font-weight: 700; font-size: 19px; color: #101828; margin: 0 0 8px;">Configure, don't code</h3>
+        <p class="inter" style="font-size: 14.5px; line-height: 1.62; color: #5b6b85; margin: 0;">Define your own business objects, fields and rules. The platform builds the tables, forms and grids for you.</p>
+      </div>
+
+      <div style="border: 1px solid #e4e9f2; border-radius: 16px; padding: 30px 28px;">
+        <div style="width: 44px; height: 44px; border-radius: 11px; background: #eef4ff; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+        </div>
+        <h3 class="rhd" style="font-weight: 700; font-size: 19px; color: #101828; margin: 0 0 8px;">Multi-tenant by design</h3>
+        <p class="inter" style="font-size: 14.5px; line-height: 1.62; color: #5b6b85; margin: 0;">Organizations, companies and branches are isolated and governed — with per-role access — from day one.</p>
+      </div>
+
+      <div style="border: 1px solid #e4e9f2; border-radius: 16px; padding: 30px 28px;">
+        <div style="width: 44px; height: 44px; border-radius: 11px; background: #eef4ff; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg>
+        </div>
+        <h3 class="rhd" style="font-weight: 700; font-size: 19px; color: #101828; margin: 0 0 8px;">Insight built in</h3>
+        <p class="inter" style="font-size: 14.5px; line-height: 1.62; color: #5b6b85; margin: 0;">Live KPIs and reporting run over your own data — scoped automatically to every user's context.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT BAND (tinted) ===== -->
+  <section id="platform" class="pad band" style="padding: 70px 72px; background: #f6f8fc; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+    <div>
+      <div class="inter" style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #1565c0; text-transform: uppercase; margin-bottom: 14px;">The platform</div>
+      <h2 class="rhd" style="font-weight: 700; font-size: 32px; letter-spacing: -0.015em; color: #101828; margin: 0 0 14px;">Meet AxiumOne</h2>
+      <p class="inter" style="font-size: 16px; line-height: 1.65; color: #5b6b85; margin: 0 0 24px; max-width: 500px;">One platform from master data to transactional documents to analytics — configured to how your operation actually runs.</p>
+      <a href="https://axiumone.com" class="inter" style="display: inline-flex; align-items: center; gap: 8px; color: #1565c0; font-weight: 600; font-size: 15.5px;">Take the tour
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <!-- PLACEHOLDER: swap this whole block for <img src="axiumone.png" alt="The AxiumOne dashboard" style="width:100%;border-radius:14px;border:1px solid #e4e9f2;box-shadow:0 24px 50px -30px rgba(11,37,69,0.4);"> -->
+    <div style="aspect-ratio: 16 / 10; border-radius: 14px; background: #ffffff; border: 1px solid #e4e9f2; box-shadow: 0 24px 50px -30px rgba(11,37,69,0.4); display: flex; align-items: center; justify-content: center;">
+      <div class="inter" style="color: #9db0cc; font-size: 13.5px; letter-spacing: 0.02em;">[ AxiumOne screenshot ]</div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (navy) ===== -->
+  <footer class="pad foot" style="background: #0b2545; color: #b9cbe4; padding: 46px 72px; display: flex; align-items: flex-end; justify-content: space-between;">
+    <div>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="ftG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#29b6f6"/><stop offset="1" stop-color="#cfe8ff"/></linearGradient></defs>
+          <path d="M11 56 V27 A21 21 0 0 1 53 27 V56" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20" y="41" width="6" height="11" rx="1.5" fill="url(#ftG)"/>
+          <rect x="29" y="33" width="6" height="19" rx="1.5" fill="url(#ftG)"/>
+          <rect x="38" y="25" width="6" height="27" rx="1.5" fill="url(#ftG)"/>
+        </svg>
+        <div class="rhd" style="font-weight: 700; font-size: 18px;"><span style="color: #ffffff;">Blue</span><span style="color: #35c0ff;">Gate</span></div>
+      </div>
+      <div class="inter" style="font-size: 13px; line-height: 1.7; color: #93a9c9;">8465 Keystone Crossing, Suite 115 #2852, Indianapolis, IN 46240</div>
+    </div>
+    <div class="inter foot-right" style="text-align: right; font-size: 13px; line-height: 1.9;">
+      <a href="mailto:info@bluegateanalytics.com" style="color: #dbe6f5;">info@bluegateanalytics.com</a><br>
+      <a href="https://www.bluegateanalytics.com" style="color: #dbe6f5;">www.bluegateanalytics.com</a><br>
+      <span style="color: #6f88ab;">© 2026 BlueGate Analytics LLC</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
