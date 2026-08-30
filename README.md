@@ -28,11 +28,18 @@ Change the design in the artboard first if the layout itself needs to move.
 
 ## Still to do
 
-- **The legal pages are drafts and say so, in amber boxes that are hard to miss on purpose.** Three
-  details are missing from the imprint (phone number, the responsible individual, the Indiana entity
-  ID) and one decision is open in the privacy policy (whether an EU representative under Art. 27
-  GDPR is needed). Both should be reviewed by a lawyer before you rely on them. Remove the amber
-  boxes once they are settled.
+- **⚠️ Two legal items are still open. They are tracked HERE, not on the pages themselves** — the
+  amber draft notices were removed once the content was complete, because internal caveats should not
+  be visible to visitors (and the second one below would have publicly advertised a possible
+  compliance gap). Do not let them get lost:
+  1. **Have both pages reviewed by a lawyer.** They were written from what the site actually does and
+     from company details supplied by the owner, but nobody qualified has checked them.
+  2. **Decide whether an EU representative under Art. 27 GDPR is required.** A controller established
+     outside the EU that offers goods or services to people in the EU generally must designate a
+     representative inside the EU and name them in its privacy policy. If BlueGate sells into Germany
+     or the EU this most likely applies, and the representative's name and address then belong in
+     `privacy.html`. The policy is currently silent on the point — it makes no false claim, but the
+     obligation does not go away by being unmentioned.
 - **`privacy.html` describes the site as it is today.** If a contact form, booking tool, analytics or
   any embedded third-party service is ever added, that page has to be updated in the same commit.
 - The nav's **Platform** and **Approach** links jump to sections on the landing page; **Contact** and
