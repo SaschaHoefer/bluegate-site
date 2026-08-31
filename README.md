@@ -8,6 +8,7 @@ The BlueGate Analytics marketing site — a single static page, served by GitHub
 | File | Why |
 |---|---|
 | `index.html` | The landing page. |
+| `features.html` | The features page, linked from the nav, the product band and the footer. Organised as four pillars — the landing page's three claims plus data sovereignty — so every line is EVIDENCE for a claim rather than an inventory entry. |
 | `imprint.html`, `privacy.html` | Provider identification and privacy policy, linked from every footer. |
 | `legal.css` | Shared document styling for those two pages. |
 | `fonts/`, `fonts.css` | Inter and Red Hat Display, **self-hosted**. Do not swap these back to the Google Fonts CDN: embedding them from `fonts.googleapis.com` sends every visitor's IP to Google, which is the single most-litigated detail on EU-facing sites, and `privacy.html` currently states that the site contacts no third parties. |
@@ -40,6 +41,9 @@ Change the design in the artboard first if the layout itself needs to move.
      or the EU this most likely applies, and the representative's name and address then belong in
      `privacy.html`. The policy is currently silent on the point — it makes no false claim, but the
      obligation does not go away by being unmentioned.
+- **`features.html` deliberately omits things.** No roadmap gaps, no licensing or seat mechanics, no
+  internals, and inventory is described narrowly as stock movements and balances because there is no
+  lot or serial tracking yet. Adding a feature line here is a claim someone will test in a demo.
 - **`privacy.html` describes the site as it is today.** If a contact form, booking tool, analytics or
   any embedded third-party service is ever added, that page has to be updated in the same commit.
 - The nav's **Platform** and **Approach** links jump to sections on the landing page; **Contact** and

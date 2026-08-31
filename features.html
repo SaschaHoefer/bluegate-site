@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — AxiumOne by BlueGate Analytics</title>
+  <meta name="description" content="What AxiumOne does: business objects you configure, multi-tenant governance, reporting over your own data, and software that talks to nothing but your infrastructure.">
+  <link rel="canonical" href="https://www.bluegateanalytics.com/features.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Features — AxiumOne">
+  <meta property="og:description" content="Configure business objects, govern access per role, report over your own data — and keep it all on your infrastructure.">
+  <meta property="og:url" content="https://www.bluegateanalytics.com/features.html">
+  <meta name="theme-color" content="#0b2545">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2545'/%3E%3Cpath d='M11 56 V27 A21 21 0 0 1 53 27 V56' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='20' y='41' width='6' height='11' rx='1.5' fill='%2335c0ff'/%3E%3Crect x='29' y='33' width='6' height='19' rx='1.5' fill='%2335c0ff'/%3E%3Crect x='38' y='25' width='6' height='27' rx='1.5' fill='%2335c0ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="fonts.css">
+
+  <style>
+    /* .wrap and .pad land on the same element in the pillar sections, so width:100% plus horizontal
+       padding would exceed the viewport without this. */
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: #ffffff; }
+    a { text-decoration: none; color: inherit; }
+    a:focus-visible { outline: 2px solid #35c0ff; outline-offset: 3px; border-radius: 4px; }
+    .rhd { font-family: 'Red Hat Display', system-ui, 'Segoe UI', sans-serif; }
+    .inter, body { font-family: 'Inter', system-ui, sans-serif; }
+
+    .wrap { width: 100%; max-width: 1280px; margin: 0 auto; }
+    .pad  { padding-left: clamp(20px, 5.6vw, 72px); padding-right: clamp(20px, 5.6vw, 72px); }
+
+    /* Pillar sections alternate white / tint so the four claims read as four distinct blocks. */
+    .pillar { padding-top: 76px; padding-bottom: 76px; }
+    .pillar:nth-of-type(even) { background: #f6f8fc; }
+    .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #1565c0; text-transform: uppercase; margin-bottom: 14px; }
+    .pillar h2 { font-weight: 700; font-size: clamp(26px, 3.4vw, 32px); letter-spacing: -0.015em; color: #101828; margin: 0 0 12px; }
+    .lead { font-size: 16.5px; line-height: 1.65; color: #5b6b85; margin: 0 0 38px; max-width: 620px; }
+
+    .points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 40px; }
+    .point { display: flex; gap: 14px; align-items: flex-start; }
+    .tick { flex: 0 0 auto; margin-top: 2px; }
+    .point-title { font-weight: 600; font-size: 15.5px; color: #101828; margin-bottom: 4px; }
+    .point-body { font-size: 14.5px; line-height: 1.62; color: #5b6b85; }
+
+    @media (max-width: 860px) {
+      .points { grid-template-columns: 1fr; gap: 22px; }
+      .nav-links a:not(.nav-cta) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER (navy) ===== -->
+<div style="background: radial-gradient(1000px 420px at 78% -20%, #16407a 0%, #0b2545 58%, #0a1f3d 100%); color: #eaf1fb;">
+  <div class="wrap">
+    <nav class="pad" style="display: flex; align-items: center; justify-content: space-between; padding-top: 30px; padding-bottom: 30px; gap: 20px; flex-wrap: wrap;">
+      <a href="/" style="display: flex; align-items: center; gap: 12px;" aria-label="BlueGate Analytics home">
+        <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="navG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#29b6f6"/><stop offset="1" stop-color="#cfe8ff"/></linearGradient></defs>
+          <path d="M11 56 V27 A21 21 0 0 1 53 27 V56" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="20" y="41" width="6" height="11" rx="1.5" fill="url(#navG)"/>
+          <rect x="29" y="33" width="6" height="19" rx="1.5" fill="url(#navG)"/>
+          <rect x="38" y="25" width="6" height="27" rx="1.5" fill="url(#navG)"/>
+        </svg>
+        <div class="rhd" style="font-weight: 700; font-size: 21px; letter-spacing: -0.015em;"><span style="color: #ffffff;">Blue</span><span style="color: #35c0ff;">Gate</span></div>
+      </a>
+      <div class="inter nav-links" style="display: flex; align-items: center; gap: 34px; font-size: 14.5px; color: #b9cbe4; font-weight: 500;">
+        <a href="features.html" style="color: #ffffff;">Features</a>
+        <a href="/#approach">Approach</a>
+        <a href="mailto:info@bluegateanalytics.com">Contact</a>
+        <a class="nav-cta" href="mailto:info@bluegateanalytics.com?subject=AxiumOne%20demo%20request" style="color: #0b2545; background: #35c0ff; padding: 9px 18px; border-radius: 8px; font-weight: 600;">Book a demo</a>
+      </div>
+    </nav>
+
+    <header class="pad" style="padding-top: 56px; padding-bottom: 76px; max-width: 800px;">
+      <div class="inter" style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em; color: #56b7ef; text-transform: uppercase; margin-bottom: 20px;">The platform</div>
+      <h1 class="rhd" style="font-weight: 700; font-size: clamp(30px, 4.6vw, 48px); line-height: 1.1; letter-spacing: -0.02em; margin: 0; color: #f4f8ff; text-wrap: balance;">What AxiumOne does</h1>
+      <p class="inter" style="font-size: 17.5px; line-height: 1.62; color: #c3d3ea; margin: 22px 0 0; max-width: 620px;">An ERP platform your team shapes to the way it already works — configured in the browser, governed from day one, and running on infrastructure you choose.</p>
+    </header>
+  </div>
+</div>
+
+<!-- ===== 1 · CONFIGURE ===== -->
+<section class="pillar">
+  <div class="wrap pad">
+    <div class="eyebrow">Configure, don't code</div>
+    <h2 class="rhd">Model your business, not a vendor's idea of it</h2>
+    <p class="lead">Define what you actually work with — orders, assets, inspections, whatever your operation calls them — and the platform builds the tables, forms and grids to match.</p>
+    <div class="points">
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Your own business objects</div><div class="point-body">Add an object and its fields, and the tables, forms, grids and API appear with it. No release cycle, no developer.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Numbering and validation you control</div><div class="point-body">Automatic document numbers, required and unique values, formats and input masks — set per field, enforced by the server.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Calculations and linked records</div><div class="point-body">Totals that compute themselves, and fields pulled from a linked record — copied as at the time of the document, or always current.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Documents with headers and lines</div><div class="point-body">Transactional documents with their own status lifecycle, so a posted order behaves differently from a draft one.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Rules and automation</div><div class="point-body">Price and value lookups from decision tables, and actions that fire when a record is created, changed or reaches a status.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Stock movements, where you need them</div><div class="point-body">Receipts, issues, transfers between branches and cycle counts, with balances kept per location.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2 · GOVERNANCE ===== -->
+<section class="pillar">
+  <div class="wrap pad">
+    <div class="eyebrow">Multi-tenant by design</div>
+    <h2 class="rhd">Governance that was there from the first record</h2>
+    <p class="lead">Separation between organizations, companies and branches is built into the foundation rather than bolted on — so who sees what is a setting, not a project.</p>
+    <div class="points">
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Organizations, companies, branches</div><div class="point-body">Every record carries its place in the hierarchy, and every query respects it automatically.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Access down to the field</div><div class="point-body">Grant a role a whole object, or make one column read-only or invisible to it. Enforced on the server, not hidden in the browser.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">A complete change history</div><div class="point-body">Every change to every record, with the old value, the new value, who made it and when.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">A view across the whole company</div><div class="point-body">Give oversight and reporting roles a read-only branch that sees every location at once, without the ability to change anything.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Two-factor authentication</div><div class="point-body">Optional for users, enforceable for administrators or across an entire organization.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Nothing disappears by accident</div><div class="point-body">Deletions are recoverable, and an administrator can see exactly what a role can reach before granting it.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3 · INSIGHT ===== -->
+<section class="pillar">
+  <div class="wrap pad">
+    <div class="eyebrow">Insight built in</div>
+    <h2 class="rhd">Answers from your own data, without a data project</h2>
+    <p class="lead">Reporting runs over the same records your team works in every day — scoped to what each person is allowed to see, with no extract, no warehouse and no waiting.</p>
+    <div class="points">
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Build a report without SQL</div><div class="point-body">Pick columns, filter, sort, group and total. Save it, and share it with the roles that should have it.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Scheduled and delivered</div><div class="point-body">Have a report run on a schedule and arrive by email, or post to another system automatically.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Figures on the dashboard</div><div class="point-body">Live key figures with trends, shown to the roles that need them and scoped to each person's own context.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Documents on your letterhead</div><div class="point-body">Print any record or report to PDF with your own logo and address, formatted for the reader's language and locale.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4 · SOVEREIGNTY ===== -->
+<section class="pillar">
+  <div class="wrap pad">
+    <div class="eyebrow">Your data stays yours</div>
+    <h2 class="rhd">Software that talks to nobody but you</h2>
+    <p class="lead">Where your data lives, and what touches it, is a decision you make — not one the software makes for you.</p>
+    <div class="points">
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">No telemetry, no tracking, no third parties</div><div class="point-body">The application makes no outbound connection except to the mail server you nominate. Nothing is sent to us, and nothing is sent to anyone else.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Real tables in a real database</div><div class="point-body">Your data sits in ordinary SQL tables, readable by your own BI and reporting tools. Nothing is locked in an opaque format.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Hosted, or on your own servers</div><div class="point-body">Run it as a service, or in your own data centre. The product is the same either way.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Eight languages, throughout</div><div class="point-body">English, German, Spanish, French, Italian, Portuguese, Dutch and Polish — including the administration screens, not just the surface.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Open to your other systems</div><div class="point-body">A REST API, keys for machine access, and webhooks that notify another system the moment something changes.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Backed up, and yours to take</div><div class="point-body">Automated backups with off-site copies, and a full export of an organization's data whenever you ask for it.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="pad" style="background: #0b2545; color: #eaf1fb; padding-top: 68px; padding-bottom: 68px;">
+  <div class="wrap" style="max-width: 720px; text-align: center; margin: 0 auto;">
+    <h2 class="rhd" style="font-weight: 700; font-size: clamp(24px, 3.2vw, 30px); letter-spacing: -0.015em; margin: 0 0 14px; color: #f4f8ff;">See it against your own process</h2>
+    <p class="inter" style="font-size: 16.5px; line-height: 1.65; color: #c3d3ea; margin: 0 0 30px;">The quickest way to judge a platform like this is to point it at something you actually do. Bring us a process and we will show you how it would be configured.</p>
+    <a href="mailto:info@bluegateanalytics.com?subject=AxiumOne%20demo%20request" class="inter" style="display: inline-block; background: #35c0ff; color: #0a1f3d; font-weight: 600; font-size: 15.5px; padding: 15px 30px; border-radius: 10px;">Book a demo</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="pad" style="background: #0a1f3d; color: #93a9c9; padding-top: 34px; padding-bottom: 34px;">
+  <div class="wrap inter" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 13px; line-height: 1.8;">
+    <div>© 2026 BlueGate Analytics LLC · 8465 Keystone Crossing, Suite 115 #2852, Indianapolis, IN 46240</div>
+    <div>
+      <a href="/" style="color: #dbe6f5;">Home</a> ·
+      <a href="imprint.html" style="color: #dbe6f5;">Imprint</a> ·
+      <a href="privacy.html" style="color: #dbe6f5;">Privacy</a> ·
+      <a href="mailto:info@bluegateanalytics.com" style="color: #dbe6f5;">info@bluegateanalytics.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
