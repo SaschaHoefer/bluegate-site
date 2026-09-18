@@ -157,13 +157,60 @@
       </div>
       <div class="point">
         <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Single sign-on with your own directory</div><div class="point-body">Sign in through Microsoft Entra ID, so joiners and leavers are handled where you already handle them. Password sign-in stays available, so a provider outage can never lock you out.</div></div>
+      </div>
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
         <div><div class="point-title">Nothing disappears by accident</div><div class="point-body">Deletions are recoverable, and an administrator can see exactly what a role can reach before granting it.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== 3 · INSIGHT ===== -->
+<!-- ===== 3 · SCHEDULING ===== -->
+<section class="pillar">
+  <div class="wrap pad">
+    <div class="eyebrow">Scheduling</div>
+    <h2 class="rhd">See the work in time, not only in a list</h2>
+    <p class="lead">Any object you have modelled with a date becomes a calendar — the same records your team already works in, laid out across a month, a week or a single day. There is no separate scheduling module and no second copy of the data.</p>
+    <div class="points">
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">A calendar over anything you model</div><div class="point-body">Choose which date drives it, and orders, jobs, inspections or site visits appear on a calendar of their own. Colour them by status, customer or whatever else matters.</div></div>
+      </div>
+
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Parallel resources, side by side</div><div class="point-body">Split the day into lanes — production lines, bays, vehicles, engineers — and see what each one is committed to at a glance.</div></div>
+      </div>
+
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Reschedule by dragging</div><div class="point-body">Moving a tile writes the new time back to the record itself, through the same validation and the same change history as typing it by hand.</div></div>
+      </div>
+
+      <div class="point">
+        <svg class="tick" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <div><div class="point-title">Visible to the right people, by default</div><div class="point-body">A calendar can only be seen by people already allowed to see the records behind it, and who may design one is a permission of its own.</div></div>
+      </div>
+
+    </div>
+
+    <!-- A real day from the demo tenant rather than a mock. Tile HEIGHT is the job's duration and each
+         column is a production line, which is the part a static list cannot show. Same capture settings as
+         the order screenshot above; width/height are stated so the page does not jump as it loads. -->
+    <figure style="margin: 46px 0 0;">
+      <img src="axiumone-calendar.png" width="2400" height="1800" loading="lazy" decoding="async"
+           alt="A day view in AxiumOne showing three production lines as parallel columns, each with several sales orders scheduled between 6am and 6pm, every tile as tall as the job is long."
+           style="width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid #e4e9f2; box-shadow: 0 24px 50px -30px rgba(11,37,69,0.4);">
+      <figcaption class="inter" style="font-size: 13.5px; line-height: 1.6; color: #7b8aa3; margin-top: 14px; max-width: 620px;">
+        One day across three production lines. Each tile is as tall as the job is long, and dragging one to another line reassigns it — on the same sales orders as the document above.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== 4 · INSIGHT ===== -->
 <section class="pillar">
   <div class="wrap pad">
     <div class="eyebrow">Insight built in</div>
@@ -190,7 +237,7 @@
   </div>
 </section>
 
-<!-- ===== 4 · SOVEREIGNTY ===== -->
+<!-- ===== 5 · SOVEREIGNTY ===== -->
 <section class="pillar">
   <div class="wrap pad">
     <div class="eyebrow">Your data stays yours</div>
