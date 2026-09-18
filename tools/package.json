@@ -1,0 +1,8 @@
+{
+  "name": "bluegate-site-tools",
+  "private": true,
+  "type": "module",
+  "description": "Re-captures the AxiumOne screenshots used on the site. Not part of the published site.",
+  "scripts": { "shoot": "node shoot.mjs" },
+  "dependencies": { "playwright": "^1.63.0" }
+}
