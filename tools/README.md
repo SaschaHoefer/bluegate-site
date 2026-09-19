@@ -54,9 +54,10 @@ JOIN slots sl ON sl.rn = k.rn;
 The calendar view itself is **Production schedule** (`app.CalendarViews` id 1005) on the demo Sales Orders
 object, with `SlotStart`/`SlotEnd` as the times and `ProductionLine` as the lane.
 
-⚠️ Keep jobs inside a single day for this shot. A job spanning several days renders on the later days
-without its label — correct behaviour, since the label belongs to where the job starts, but in a still
-image it reads as a blank block rather than as work in progress.
+The two multi-day fixtures (`SO-10345`, `SO-10346`) sit deliberately clear of the 12th, so this shot stays
+a clean single-day schedule. Since AxiumOne v0.292.0 a continuing job does label itself — the later pieces
+read `SO-10345 (continued)` and the heading stays pinned as you scroll — so including one is a choice about
+how busy the image should look, not a rendering problem.
 
 ## Re-running always produces a diff
 
